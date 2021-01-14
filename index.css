@@ -1,0 +1,576 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.boundary{
+    width:1200px;
+    margin:0 auto;
+    
+}
+a{
+    text-decoration: none;
+    transition: .4s;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+  text-align:center;
+}
+.pt-100{
+  padding-top:60px;
+}
+.pb-100{
+  padding-bottom:60px;
+}
+.fix:before, .fix:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+ .bannar-area {
+    background-image: url(images/bannar.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+     height: 600px;
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .bannar-area:before {
+     position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+.content{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:#fff ;
+    letter-spacing: 3px;
+}
+.content h5 {
+    font-size: 35px;
+    
+  }
+  .content  h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 20px 0;
+      
+  }
+.content a{
+    color: white;
+    display: inline-block;
+    background-color:#CA424F;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    margin: 0 10px;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+.content a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:-100%;
+    background-color:teal;
+    color: #f0932b;
+    z-index: -1;
+}
+.content a:hover:before{
+   left: 100%;
+}
+   
+.logo {
+    float: left;
+    width: 250px;
+  }
+.logo img{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+  .menu {
+    float: right;
+      padding-right: 15px;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+  .header-area {
+    padding: 10px 0;
+}
+.header-fixed{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.header-fixed a{
+    color:white;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+  font-style: italic;
+    position: relative;
+}
+.services-content h2:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 3px;
+  background-color:teal;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services h2:after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 4px;
+  background-color: tomato;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services-menu-area {
+    
+  }
+  .services-box{
+    float: left;
+    width:400px;
+    margin-right: 50px;
+    margin-left: 70px;
+  }
+  .single-box {
+    position: relative;
+    padding-left:230px;
+    padding-top: 10px;
+    margin-bottom:130px;
+    transition:.3s;
+    
+}
+  .single-box img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:.3s;
+    border-radius: 50%;
+    border: 2px dashed red;
+  }
+  .single-box h4 span {
+    float: right;
+    color:teal;
+    font-style: italic;
+  }
+  .single-box h4 {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: peru;
+    font-size:18px;
+    font-style: italic;
+      text-transform: uppercase;
+  }
+.cover-area{
+    background-image: url(images/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+    height:450px;
+    position: relative;
+    z-index: 2;
+    
+}
+.cover-area:before{
+     position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left:-50%;
+    top: 0;
+    background-color:white;
+    opacity: .6;
+    z-index: -1;
+}
+.single-cover{
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    content: "";
+    z-index: 10;
+    top:70px;
+    letter-spacing: 2px;
+   
+    
+}
+.cover-content{
+    padding: 40px;
+    width: 500px;
+}
+.cover-content h2{
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000000;
+}
+    
+.cover-content p{
+  color: #000000;
+    font-size: 20px;
+}
+.cover-content a{
+    color: white;
+    display: inline-block;
+    background-color:teal;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 50px;
+   
+}
+.cover-area2{
+    background-image: url(images/bannar.jpg);
+    background-position: center;
+    background-size: cover;
+    height:450px;
+    position: relative;
+    z-index: 2;
+    
+}
+.cover-area2:before{
+     position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left:50%;
+    top: 0;
+    background-color:white;
+    opacity: .7;
+    z-index: -1;
+}
+.single-cover2{
+    left: 50%;
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    content: "";
+    z-index: 10;
+    top:70px;
+    letter-spacing: 2px;
+   
+    
+}
+.cover-content2{
+    padding: 40px;
+    width: 500px;
+}
+.cover-content2 h2{
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000000;
+}
+    
+.cover-content2 p{
+  color: #000000;
+    font-size: 20px;
+}
+.cover-content2 a{
+    color: white;
+    display: inline-block;
+    background-color:teal;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 50px;
+   
+    
+}
+.package{
+    
+}
+.single-package{
+    float: left;
+    width: 240px;
+    box-shadow: 5px 5px 15px -4px gray;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+}
+.single-package h2{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    font-style: italic;
+}
+.single-package h3{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 900;
+    font-style: italic;
+    color: tomato;
+     font-size:30px;
+    padding-bottom: 40px;
+}
+
+.single-package h4{
+    text-align: center;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.single-package p{
+    padding-top:10px;
+    padding-left: 50px;
+    
+}
+.single-package  a{
+    display: inline-block;
+    background-color: lightcoral;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding:10px 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 18px;
+    color: #000;
+    margin-left: 40px;
+    border: 2px dashed gray;
+}
+.another-content h3{
+    text-align: center;
+    font-size:30px;
+    font-style: italic;
+}
+.main-box{
+    float: left;
+}
+.count-box{
+    float: left;
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.count-box:before{
+    position: absolute;
+    content: "";
+    background-image: url(images/count-1.png);
+    background-position: center;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    left:100px;
+    top: -50px;
+}
+.count-box:after{
+    position: absolute;
+    content: "find the perfect venue for free";
+    left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: capitalize;
+    top: 50%;
+}
+.count-box2:after{
+    position: absolute;
+    content: "connect with the best vendor";
+    left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: capitalize;
+    top: 50%;
+}
+.count-box3:after{
+    position: absolute;
+    content: "let us help you with the event";
+    left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: capitalize;
+    top: 50%;
+    
+}
+.count-box2{
+   float: right;
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.count-box2:before{
+    position: absolute;
+    content: "";
+    background-image: url(images/count-3.png);
+    background-position: center;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    left:100px;
+    top: -50px;
+}
+.count-box3{
+     float: right;
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.count-box3:before{
+    position: absolute;
+    content: "";
+    background-image: url(images/count-2.png);
+    background-position: center;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    left:100px;
+    top: -50px;
+}
+.profession{
+    
+}
+.single-profession{
+   float: left;
+    width:240px;
+    margin-right:10px;
+   
+    margin-left:15px;
+}
+.single-profession img{
+    width: 100%;
+     border: 2px dashed gray;
+}
+.single-profession h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: oblique;
+    padding-top: 20px;
+}
+.news{
+    
+}
+.single-news{
+    float: left;
+    width: 300px;
+    margin: 0 30px;
+   
+}
+.single-news img{
+    width: 100%;
+     border: 3px solid teal;
+}
+.celebrate{
+    background-image: url(images/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+.celebrate-box{
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+    opacity: .8;
+    position: relative;
+    z-index: 4;
+}
+.celebrate-box:before{
+    position: absolute;
+    content:"";
+    width: 700px;
+    height: 250px;
+    border: 2px solid #fff;
+    left: 200px;
+    top: 100px;
+}
+.celebrate-content{
+    position: absolute;
+    z-index: 100;
+    content: "";
+    width: 100%;
+    top: 165px;
+   text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #000;
+}
+.celebrate-content p{
+    margin-bottom:45px;}
+.celebrate-content a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-size: 25px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 800;
+}
+.footer h2{
+    background-color: #000;
+    color: #fff;
+    font-size: 26px;
+    padding: 50px;
+    text-align: center;
+}
